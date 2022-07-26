@@ -16,9 +16,11 @@ public class App {
         // String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json";
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
-        //String url = "http://localhost:8080/linguagens";
-        String url = "https://alura-linguagens-api.herokuapp.com/linguagens";        
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        //String url = "http://localhost:8080/jogos";
+        //String url = "https://alura-linguagens-api.herokuapp.com/linguagens";  
+        String url = "https://fabiomori-firstapp.herokuapp.com/jogos";      
+        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
