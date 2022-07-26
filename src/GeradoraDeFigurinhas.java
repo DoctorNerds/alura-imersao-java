@@ -4,13 +4,15 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
+import java.awt.FontMetrics;
 
 import javax.imageio.ImageIO;
+
 
 public class GeradoraDeFigurinhas {
     
 
-    public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
+    public void cria(InputStream inputStream, String nomeArquivo, String texto) throws Exception {
 
         // leitura da imagem
         // InputStream inputStream = 
@@ -31,12 +33,23 @@ public class GeradoraDeFigurinhas {
         graphics.drawImage(imagemOriginal, 0, 0, null);
 
         // configurar a fonte
-        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 64);
+        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, largura/8);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
 
+        FontMetrics medidasFonte = graphics.getFontMetrics(fonte);
+        int posicaoTextoX = (largura - medidasFonte.stringWidth(texto)) / 2;
+        //int posicaoTextoY = novaAltura-(altura/12);
+        int posicaoTextoY = altura+(novaAltura/20);
+
+
+        //int positionX = imagemOriginal.getWidth();
+        //int positionY = novaImagem.getHeight();
+
+        
         // escrever uma frase na nova imagem
-        graphics.drawString("TOPZERA", 100, novaAltura - 100);
+        graphics.drawString(texto, posicaoTextoX , posicaoTextoY);
+
 
         // escrever a nova imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File(nomeArquivo));

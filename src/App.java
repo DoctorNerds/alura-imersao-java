@@ -1,5 +1,6 @@
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.List;
 
 public class App {
@@ -16,11 +17,11 @@ public class App {
         // String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json";
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
-        //String url = "http://localhost:8080/jogos";
+         String url = "http://localhost:8080/jogos";
         //String url = "https://alura-linguagens-api.herokuapp.com/linguagens";  
-        String url = "https://fabiomori-firstapp.herokuapp.com/jogos";      
-        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+        //String url = "https://fabiomori-firstapp.herokuapp.com/jogos";      
+         ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        //ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
@@ -29,15 +30,18 @@ public class App {
         List<Conteudo> conteudos = extrator.extraiConteudos(json);
 
         var geradora = new GeradoraDeFigurinhas();
+        //String texto = "@MATRIZKIDS";
+        var Legendas = Arrays.asList("TÔ NO ESPAÇO", "PULA, PULA!", "ACELERA", "CRIE SEU JOGO", "VEM ASSISTIR", "SEJA DIGITAL", "JÁ CONHECE?");
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 7; i++) {
 
             Conteudo conteudo = conteudos.get(i);
 
             InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
             String nomeArquivo = "saida/" + conteudo.getTitulo() + ".png";
 
-            geradora.cria(inputStream, nomeArquivo);
+            
+            geradora.cria(inputStream, nomeArquivo, Legendas.get(i));
 
             System.out.println(conteudo.getTitulo());
             System.out.println();
