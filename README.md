@@ -4,7 +4,7 @@ Este foi o meu primeiro projeto em **Java**, no primeiro contato com a linguagem
 
 ## :notebook_with_decorative_cover: Projeto
 
-O objetivo é construir Stickers, consumindo uma API pessoal gerada no banco de dados global MongoDB Atlas e comparilhada através do Heroku, um PaaS (Platform as a Service) que permite que possamos hospedar e compartilhar nossa API na nuvem.
+O objetivo é construir Stickers, consumindo uma API pessoal gerada no banco de dados global MongoDB Atlas e compartilhada através do Heroku, um PaaS (Platform as a Service) que permite que possamos hospedar e compartilhar nossa API na nuvem.
 
 ## :open_file_folder: Resultado do projeto
 
@@ -19,7 +19,7 @@ Os Stickers gerados utilizaram as imagens dos projetos educacionais da Escola Ma
 
 - Web API (Applications Protocol Interface): é um serviço que conecta um aplicativo a um banco de dados, permitindo fazer requisições para ler, editar e apagar informações. Podemos pensar em uma API como uma conexão entre dispositivos e servidores, feita para facilitar o acesso aos dados. Por exemplo, através de dispositivos podemos fazer uma requisição para uma API, que por sua vez realiza um processamento no servidor onde as informações estão armazenadas, e recebe um resultado de volta. Por sua vez, a API retorna este resultado como resposta para a requisição feita do dispositivo, finalizando este ciclo de comunicação de dados. 
 
-- IDE ( Integrated Development Environment): é o ambiende de desenvolvimento que utilizamos para programar. Existem diversas opções, cada uma com vantagens e desvantagens dependendo da linguagem que será utilizada. De toda forma, uma IDE possui várias ferramentas que auxiliam o programador durante o desenvolvimento do algoritmo. Neste projeto foi utilizado o Visual Studio Code.
+- IDE ( Integrated Development Environment): é o ambiente de desenvolvimento que utilizamos para programar. Existem diversas opções, cada uma com vantagens e desvantagens dependendo da linguagem que será utilizada. De toda forma, uma IDE possui várias ferramentas que auxiliam o programador durante o desenvolvimento do algoritmo. Neste projeto foi utilizado o Visual Studio Code.
 
 - JSON (Java Script Object Notation): é uma forma de notação **Java Script** muito utilizada para representar banco de dados e comum para diversas linguagens. Existem algumas regras que caracterizam um arquivo JSON, como: não pode ter funções, não pode ter comentários, todo texto tem aspas duplas e as propriedades sempre tem aspas duplas também.
 
