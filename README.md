@@ -23,7 +23,7 @@ Os Stickers gerados utilizaram as imagens dos projetos educacionais da Escola Ma
 
 - JSON (Java Script Object Notation): é uma forma de notação **Java Script** muito utilizada para representar banco de dados e comum para diversas linguagens. Existem algumas regras que caracterizam um arquivo JSON, como: não pode ter funções, não pode ter comentários, todo texto tem aspas duplas e as propriedades sempre tem aspas duplas também.
 
-- Expressões Regulares: são padrões encontrados em strings formatadas que são utilizadas para pesquisa e substituição de textos dentro dela.
+- Expressões Regulares: são padrões encontrados em strings e são muito utilizadas para pesquisa e substituição de textos.
   
 ### :arrow_forward: Rodando o Projeto
 - Primeiro você deve fazer o download das pastas do projeto através do Git ou do arquivo ZIP.
