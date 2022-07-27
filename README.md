@@ -4,7 +4,7 @@ Este foi o meu primeiro projeto em **Java**, no primeiro contato com a linguagem
 
 ## :notebook_with_decorative_cover: Projeto
 
-O objetivo é construir Stickers, consumindo uma API pessoal gerada no banco de dados global MongoDB Atlas e compartilhada através do Heroku, um PaaS (Platform as a Service) que permite que possamos hospedar e compartilhar nossa API na nuvem.
+O objetivo é construir Stickers, consumindo uma API pessoal gerada no banco de dados global MongoDB Atlas e compartilhada através do Heroku, um PaaS (Platform as a Service) que permite que possamos hospedar e compartilhar nossa API na nuvem. O algoritmo que gera a API utilizada neste projeto pode ser encontrado em [alura-imersao-java-api-cloud](https://github.com/DoctorNerds/alura-imersao-java-api-cloud).
 
 ## :open_file_folder: Resultado do projeto
 
